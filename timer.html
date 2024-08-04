@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock and Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm Clock</h1>
+        <div class="alarm-clock">
+            <input type="time" id="alarm-time">
+            <button onclick="setAlarm()">Set Alarm</button>
+            <p id="alarm-message"></p>
+        </div>
+        <h1>Timer</h1>
+        <div class="timer">
+            <input type="number" id="minutes" placeholder="Minutes">
+            <input type="number" id="seconds" placeholder="Seconds">
+            <button onclick="startTimer()">Start Timer</button>
+            <p id="timer-display">00:00</p>
+            <p id="timer-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
