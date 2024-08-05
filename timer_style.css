@@ -1,3 +1,4 @@
+/* Existing styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -6,6 +7,7 @@ body {
     height: 100vh;
     background-color: #e0f7fa;
     margin: 0;
+    position: relative; /* Add this line to ensure absolute positioning works */
 }
 
 .container {
@@ -62,4 +64,22 @@ p {
 #timer-display {
     font-size: 2em;
     font-weight: bold;
+}
+
+/* New styles for the Home link */
+.nav-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-home:hover {
+    background-color: #f0f0f0;
 }
