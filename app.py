@@ -28,7 +28,7 @@ def add_task():
     return render_template('add_task.html')
 
 @app.route('/edit/<int:id>', methods=('GET', 'POST'))
-def edit_task(id):
+def edit-task(id):
     task = Task.query.get_or_404(id)
     if request.method == 'POST':
         task.title = request.form['title']
@@ -36,7 +36,7 @@ def edit_task(id):
         task.due_date = datetime.strptime(request.form['due_date'], '%Y-%m-%dT%H:%M')
         db.session.commit()
         return redirect(url_for('index'))
-    return render_template('edit_task.html', task=task)
+    return render_template('edit-task.html', task=task)
 
 @app.route('/delete/<int:id>')
 def delete_task(id):
