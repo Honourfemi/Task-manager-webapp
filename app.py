@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from models import db, Task
 from config import Config
-from waitress import serve
 from datetime import datetime
 
 app = Flask(__name__)
@@ -55,4 +54,4 @@ def timer():
     return render_template('timer.html')
 
 if __name__ == '__main__':
-    serve(app, host='0.0.0.0', port=8080)
+    app.run(debug=True)
