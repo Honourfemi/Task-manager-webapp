@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calendar</title>
-    <link rel="stylesheet" href="calendar.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/calendar_style.css') }}">
 </head>
 <body>
+    <a href="{{ url_for('index') }}" class="nav-home">Home</a>
     <div class="calendar-container">
         <div class="calendar-header">
             <button id="prev" onclick="prevMonth()">&#9664;</button>
@@ -26,6 +27,6 @@
             <div class="calendar-dates" id="calendarDates"></div>
         </div>
     </div>
-    <script src="calendar.js"></script>
+    <script src="{{ url_for('static', filename='js/calendar_script.js') }}"></script>
 </body>
 </html>
